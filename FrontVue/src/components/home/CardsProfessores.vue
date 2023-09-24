@@ -74,7 +74,6 @@ export default {
 </script>
 
 <style>
-    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
     .cards-professores {
         display: inline-flex;
         align-items: flex-start;

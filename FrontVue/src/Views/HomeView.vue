@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import  CustomFooter from '../components/CustomFooter.vue'
-import  CustomNavBar from '../components/CustomNavBar.vue'
+import  CustomFooter from '../components/layout/CustomFooter.vue'
+import  CustomNavBar from '../components/layout/CustomNavBar.vue'
 import CardsProfessores from '../components/home/CardsProfessores.vue'
 import SearchBar from '../components/home/SearchBar.vue'
 
