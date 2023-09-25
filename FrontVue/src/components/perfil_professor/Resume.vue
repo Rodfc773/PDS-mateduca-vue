@@ -12,12 +12,10 @@
     <div class="resume-middle">
         <p>Especialidades</p>
 
-        <ul class="special-subjects">
-            <li v-for="(subject, index) in subjects" :key="index">{{ subject }}</li>
-        </ul>
+        <listsubjects/>
     </div>
 
-    <div class ='divider'></div>
+    <divider/>
 
     <div class="resume-down">
         <p class = "curr">Curriculum</p>
@@ -27,7 +25,10 @@
 </template>
 
 <script>
+import Divider from '../layout/Divider.vue'
+import Listsubjects from '../layout/Listsubjects.vue'
 export default {
+  components: { Listsubjects, Divider },
 
     data(){
 
@@ -56,11 +57,6 @@ export default {
     gap: 32px;
     border-radius: 8px;
     border: 1px solid #D9D9D9;
-}
-.divider{
-    width: 100%;
-    height: 1px;
-    background-color: black;
 }
 .resume-text{
 

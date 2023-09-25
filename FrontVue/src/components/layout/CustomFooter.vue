@@ -10,7 +10,7 @@
             </div>
         </div>
 
-         <hr />
+        <divider/>
 
         <div class="rodape-down">
             <p>Todos os direitos reservados &copy;</p>
@@ -20,7 +20,9 @@
 </template>
 
 <script>
+import Divider from './Divider.vue'
 export default {
+  components: { Divider },
     name:'CustomFooter'
 }
 </script>
@@ -75,13 +77,12 @@ export default {
         font-weight: 700;
         line-height: normal;
     }
-    hr{
-        padding-left: 40px;
-        color: #000;
-    }
     .rodape-down{
         justify-content: space-between;
         display: flex;
-        padding-left: 40px;
+        padding-left: 30px;
+    }
+    .rodape-down p{
+        margin: 10px 0px;
     }
 </style>

@@ -4,11 +4,13 @@
     <ImagePerfil/>
     <MainInformation/>
     <Information/>
+    <CardAgendar/>
     <CustomFooter/>
   </div>
 </template>
 
 <script>
+import CardAgendar from '../components/layout/CardAgendar.vue'
 import CustomFooter from '../components/layout/CustomFooter.vue'
 import CustomNavBar from '../components/layout/CustomNavBar.vue'
 import ImagePerfil from '../components/perfil_professor/ImagePerfil.vue'
@@ -20,7 +22,8 @@ export default {
     CustomFooter,
     ImagePerfil,
     MainInformation,
-    Information, 
+    Information,
+    CardAgendar, 
   },
 
 }

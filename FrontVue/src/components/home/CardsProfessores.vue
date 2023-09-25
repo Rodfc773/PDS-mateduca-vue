@@ -23,11 +23,7 @@
                             <p>{{professor.experience}}</p>
                         </div>
 
-                        <ul>
-
-                            <li v-for ="(subject,index) in professor.subjects" v-bind:key="index">{{subject}}</li>
-
-                        </ul>
+                        <listsubjects/>
                     </div>
                 </div>
             </div>
@@ -36,7 +32,9 @@
 </template>
 
 <script>
+import Listsubjects from '../layout/Listsubjects.vue'
 export default {
+  components: { Listsubjects },
     name: 'CardsProfessores',
     data(){
         return{
@@ -44,28 +42,23 @@ export default {
                 {
                     nome: 'Juliana Ribeiro',
                     experience: '3 anos',
-                    subjects: ['Álgebra', 'Geometria', 'Equação do 2º']
 
                 },
                 {
                     nome: 'Carlos Silveira',
                     experience: '5 anos',
-                    subjects: ['Inequações', 'Geometria', 'Sequências']
                 },
                 {
                     nome: 'Carlos Silveira',
                     experience: '5 anos',
-                    subjects: ['Inequações', 'Geometria', 'Sequências']
                 },
                 {
                     nome: 'Carlos Silveira',
                     experience: '5 anos',
-                    subjects: ['Inequações', 'Geometria', 'Sequências']
                 },
                 {
                     nome: 'Carlos Silveira',
                     experience: '5 anos',
-                    subjects: ['Inequações', 'Geometria', 'Sequências']
                 },
             ]
         }

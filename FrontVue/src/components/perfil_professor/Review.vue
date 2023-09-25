@@ -1,6 +1,5 @@
 <template>
-  <div class="avaliations">
-
+  <section class="avaliations">
         <section class="classification">
             <div v-for="(student, index) in Alunos" :key="index" class="student-avaliation">
                     <p> <i class="bi bi-star-fill"></i>
@@ -16,7 +15,7 @@
                 <h5 class="name-student">{{ student.name }}</h5>
             </div>
         </section>
-    </div>
+  </section>
 </template>
 
 <script>
@@ -45,26 +44,27 @@ export default {
     display: flex;
 }
 .classification{
-
     width: 100%;
     margin: 0px 75px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .student-avaliation{
 
-    display: inline-flex;
-    width: 450px;
+    width: 23%;
     padding: 32px;
-    flex-direction: column;
     align-items: flex-start;
     gap: 32px;
     border-radius: 8px;
     border: 1px solid #D9D9D9;
-    margin: 0px 20px;
+    margin: 10px 20px;
 }
 .student-avaliation i{
 
     color: orange;
-    padding: 0px 2px;
+    padding: 0px 3px;
+    margin: 10px 0px;
 }
 .text-avaliation.student{
     color: #5C5C5C;
@@ -74,6 +74,7 @@ export default {
     font-weight: 400;
     line-height: 150%; /* 30px */
     align-self: stretch;
+    margin: 20px 0px;
 }
 .name-student{
     align-self: stretch;
