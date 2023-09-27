@@ -2,7 +2,7 @@
     <section class="card-login">
       <div class = "head">
         <p class="title-login">Entrar </p>
-        <span><i class="bi bi-x"></i></span>
+        <button @click="$emit('showModal')"><i class="bi bi-x"></i></button>
       </div>
 
       <div class="login-area">
@@ -44,6 +44,7 @@
 import Divider from './Divider.vue'
 export default {
   components: { Divider },
+  emits:['showModal'],
 
 }
 </script>
@@ -86,10 +87,14 @@ export default {
     font-weight: 700;
     line-height: normal; 
 }
+.head button{
+  border-style: none;
+  background-color: #FFF;
+}
 .head i{
   display: inline-flex;
   flex-direction: row-reverse;
-  font-size: 30px;
+  font-size: 25px;
 }
 .google-option{
   width: 100%;

@@ -28,9 +28,9 @@
 
 
             </div>
-            <button @click="agendar" class="agendar" type ="button">Agendar Aula com Juliana</button>
+            <button @click="viewCard" class="agendar" type ="button">Agendar Aula com Juliana</button>
 
-            <FormLogin v-if= "!isLogged && clickAgendar" :clickAgendar="clickAgendar"/>
+            <FormLogin v-if= "!isLogged && isVisible" @show-Modal="showModal"/>
         </div>
     </section>
 </template>
@@ -47,15 +47,18 @@ export default {
         return{
 
             isLogged: false,
-            clickAgendar: false,
-
-            agendar(){
-
-                this.clickAgendar = !this.clickAgendar
-            }
-
-
+            isVisible: false,
         }
+    },
+    methods:{
+            showModal(){
+
+                this.isVisible = !this,this.isVisible;
+            },
+            viewCard(){
+
+                this.isVisible = true;
+            },
     }
 }
 
